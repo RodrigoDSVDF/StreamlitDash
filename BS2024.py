@@ -6,7 +6,7 @@ import streamlit as st
 def main():
     st.title('Histórico de Preços de Fechamento para Empresas B3')
 
-    tabela = pd.read_csv(r"C:\Users\Rodrigo_df\empresas_b3.csv")
+    tabela = pd.read_csv(r"empresas_b3.csv")
     st.dataframe(tabela)
 
     for empresa in tabela['Sigla']:
